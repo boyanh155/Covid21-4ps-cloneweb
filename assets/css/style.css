@@ -1,0 +1,607 @@
+/* Reset css */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+/* Clearfix */
+
+.clearfix::before,
+.clearfix::after {
+    content: " ";
+    display: block;
+}
+
+.clearfix::after {
+    clear: both;
+}
+
+
+/* Variable */
+
+:root {
+    --white-color: #fff;
+}
+
+
+/* Common CSS */
+
+.col-full {
+    width: 100%;
+}
+
+.col {
+    float: left;
+}
+
+.col-split4 {
+    width: calc(100%/4);
+}
+
+.white-color {
+    color: var(--white-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+.F-4ps {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: font-contentWrap1;
+    src: url('https://pizza4ps.com/common2017/fonts/CenturyStd-LightCondensed-VH.woff');
+}
+
+@font-face {
+    font-family: font-body;
+    src: url('https://pizza4ps.com/common2017/fonts/Atlas-Grotesk-Regular-VH.woff');
+}
+
+html {
+    /* css font stack */
+}
+
+
+/* Main */
+
+#main {
+    letter-spacing: 0.05em;
+    /* vertical-align: text-bottom; */
+    font-family: 'font-body', sans-serif;
+}
+
+
+/* Begin header */
+
+#header-container {
+    /* padding: 20%;
+    background-image: url('https://pizza4ps.com/img2017/top/img_main.webp');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 0;
+    right: 0;
+    left: 0; */
+}
+
+#header {
+    height: 88px;
+    z-index: 1;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    background-color: rgba(3, 3, 3, 0.8);
+    /* background-image: linear-gradient(180deg, rgba(133, 130, 130, 0.842), rgba(10, 10, 10, 0)); */
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#header__nav {
+    width: 75%;
+    /* margin-right: 28px; */
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.1em;
+}
+
+#header__nav>ul>li>a {
+    line-height: 88px;
+    padding-bottom: 20px;
+}
+
+#header__nav li {
+    list-style: none;
+    position: relative;
+    display: inline-block;
+}
+
+#header__nav li a {
+    display: inline-block;
+}
+
+
+/* #header__nav>a {
+    padding: 40px;
+} */
+
+
+/*  */
+
+#header__nav li:hover .header__subnav {
+    display: flex;
+    animation: opacityFull 0.3s linear forwards;
+}
+
+.header__left-nav {
+    margin-right: 50px;
+}
+
+.header__left-nav li {
+    margin-left: 10px;
+}
+
+.header__left-nav>li a {
+    /* padding-bottom: 40px; */
+    /* line-height: 88px; */
+}
+
+#header__nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#header__nav li:hover>a {
+    animation: fillColor 0.3s linear forwards;
+}
+
+
+/* flag */
+
+.lang {
+    position: relative;
+    top: -1px;
+    right: 21px;
+    line-height: 88px;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+#header__nav div:hover.lang a .VietNamFlag {
+    display: block;
+    animation: opacityFull 0.3s linear forwards;
+}
+
+.VietNamFlag {
+    position: absolute;
+    top: 69px;
+    left: 33px;
+    display: none;
+}
+
+#header__logo {
+    /* position: absolute; */
+    padding-top: 34px;
+    padding-left: 28px;
+    width: 23%;
+}
+
+#header__logo li a {
+    margin-right: 14px;
+}
+
+#header__logo a img {
+    width: 120px;
+    height: auto;
+}
+
+.header__right-side {
+    display: flex;
+    align-items: stretch;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 88px;
+}
+
+.header__right-side:hover {
+    animation: opacityHalf .15s ease-in forwards;
+}
+
+.Res.header__right-side {
+    background-color: #394f80;
+    flex: 1.5;
+}
+
+.Del.header__right-side {
+    background-color: #9eaf3b;
+    flex: 1;
+}
+
+
+/* Begin subnav */
+
+.header__subnav {
+    background-color: rgba(3, 3, 3, 0.8);
+    position: absolute;
+    top: 88px;
+    left: -15px;
+    width: 225px;
+    flex-direction: column;
+    display: none;
+}
+
+.header__subnav li {
+    padding: 10px 0 10px 25px;
+    margin-bottom: 4px;
+    margin-right: 3px;
+}
+
+
+/* End subnav */
+
+
+/* End header */
+
+
+/* Begin content */
+
+#content {
+    width: 100%;
+}
+
+
+/* Main Image */
+
+#content__mainImg {
+    position: relative;
+    text-align: center;
+    justify-content: center;
+}
+
+#content__mainImg img {
+    width: 100%;
+    display: block;
+    z-index: -1;
+}
+
+.content__txtbox {
+    width: 100%;
+    padding-top: 88px;
+    font-family: 'font-contentWrap1', 'l serif';
+    letter-spacing: 4px;
+    line-height: 60px;
+    font-size: 1.8em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.content__txtbox h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+
+/* End Main Img */
+
+
+/* Content Wrap 1 */
+
+#contentWrap1 {
+    background: url('//pizza4ps.com/common2017/img/other/bg_body.gif') repeat 0 0;
+    /* height: 100%; */
+    /* height: 1000px; */
+    z-index: -1;
+}
+
+
+/* Begin Content Wrap 1 __ Welcome */
+
+.contentWrap_topPicture {
+    background: url('//pizza4ps.com//img2017/top/img_01.webp') no-repeat 100px -70px;
+    height: inherit;
+}
+
+#contentWrap__Welcome {
+    justify-content: center;
+    align-items: center;
+}
+
+#contentWrap__Welcome .left-text {
+    align-self: center;
+    text-align: center;
+}
+
+#contentWrap__Welcome .left-text .h3-class {
+    font-weight: normal;
+    font-size: 38px;
+    line-height: 42px;
+    margin-bottom: 20px;
+}
+
+#contentWrap__Welcome .left-text {
+    font-family: 'font-contentWrap1', 'l serif';
+    /* flex: 1; */
+    display: inline-block;
+    width: 55%;
+}
+
+
+/* general purpose - #contentWrap__Welcome - #contentWrap__Intro */
+
+.intro-text {
+    padding: 100px 20px 85px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+    color: #ccc;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+.right-text {
+    /* flex: 1; */
+    display: inline-block;
+    font-size: 14px;
+    line-height: 2.1;
+    width: 44%;
+    text-align: left;
+}
+
+
+/*  */
+
+#contentWrap__Welcome .right-text__btn {
+    margin-top: 20px;
+}
+
+#contentWrap__Welcome .right-text__btn a:hover {
+    animation: fillColor 0.2s linear forwards, fillBColor 0.2s linear forwards;
+}
+
+#contentWrap__Welcome .right-text__btn a {
+    border: 1px solid #fff;
+    font-family: 'font-contentWrap1', 'l serif';
+    padding: 0 30px 0 30px;
+    line-height: 50px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+#contentWrap__Welcome .right-text__btn a::after {}
+
+#contentWrap__Welcome .right-text__btn .white-color span {}
+
+
+/* End Content Wrap 1 __ Welcome */
+
+
+/* Begin Content Wrap 1 __ List-Item */
+
+
+/* animation opacityOut for item */
+
+#contentWrap__listItem ul li a:hover:before {
+    animation-name: opacityOut;
+    animation-duration: 0.3s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+/* End animation */
+
+#contentWrap__listItem {
+    padding: 0 20px;
+}
+
+#contentWrap__listItem ul li {
+    padding: 0 5px;
+    list-style: none;
+}
+
+#contentWrap__listItem ul li a {
+    position: relative;
+    display: block;
+    display: flex;
+    justify-content: center;
+}
+
+#contentWrap__listItem ul li a::before {
+    content: ' ';
+    display: block;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(158, 175, 59, .7); */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#contentWrap__listItem ul li:first-child a::before {
+    background-color: rgba(158, 175, 59, .7);
+}
+
+#contentWrap__listItem ul li:nth-child(2) a::before {
+    background-color: rgba(78, 63, 53, .7);
+}
+
+#contentWrap__listItem ul li:nth-child(3) a::before {
+    background-color: rgba(58, 45, 89, .7);
+}
+
+#contentWrap__listItem ul li:nth-child(4) a::before {
+    background-color: rgba(51, 51, 51, .7);
+}
+
+#contentWrap__listItem ul li span {
+    color: var(--white-color);
+    font-size: 26px;
+    font-family: 'font-contentWrap1', 'l serif';
+    display: block;
+    /* z-index: 5; */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+/* End Content Wrap 1 __ List-Item */
+
+
+/* Begin Content Wrap 1 __ Intro */
+
+#contentWrap__Intro .intro-text {
+    text-align: left;
+}
+
+#contentWrap__Intro .intro-text .left-text {
+    width: 55%;
+    padding-right: 75px;
+}
+
+#contentWrap__Intro .intro-text .left-text .h3-class {
+    font-size: 32px;
+    line-height: 35px;
+    font-weight: normal;
+    font-family: 'font-contentWrap1', 'l serif';
+    margin-bottom: 20px;
+    /* flex: 1; */
+    /* display: inline-block; */
+}
+
+#contentWrap__Intro .left-text .under-text {
+    font-family: 'font-body', sans-serif;
+    font-size: 14px;
+    line-height: 2.1;
+    font-weight: normal;
+    letter-spacing: 2.1px;
+    color: #ccc;
+}
+
+#contentWrap__Intro .intro-text .right-text img {
+    width: 100%;
+    height: auto;
+}
+
+
+/* End Content Wrap 1 __ Intro */
+
+
+/* Begin Content Wrap 1 __ Menu */
+
+#contentWrap-Menu {
+    background: url('//pizza4ps.com//img2017/top/bg_menu.webp') no-repeat 0 0;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    padding: 55px 0 45px 0;
+}
+
+#contentWrap-Menu h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+}
+
+#contentWrap-Menu .listMenu {
+    text-align: center;
+    font-family: 'font-contentWrap1', 'l serif';
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contentWrap-Menu .listMenu .flexMenu {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+}
+
+#contentWrap-Menu .listMenu li {
+    list-style: none;
+}
+
+#contentWrap-Menu .listMenu li span {
+    color: var(--white-color);
+}
+
+#contentWrap-Menu .itemMenu {
+    flex: 1;
+    font-size: 22px;
+    line-height: 22px;
+    padding: 40px 0 60px 0;
+    border-left: 1px solid #9b9da0;
+}
+
+#contentWrap-Menu .flexMenu li:first-child {
+    border-left: none;
+}
+
+
+/* End Content Wrap 1 __ Menu */
+
+
+/* End content */
+
+
+/* keyframe */
+
+@keyframes opacityOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes opacityFull {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes opacityHalf {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
+
+@keyframes fillColor {
+    from {
+        color: #fff;
+    }
+    to {
+        color: #9eaf3b;
+    }
+}
+
+@keyframes fillBColor {
+    from {
+        border: 1px solid #fff;
+    }
+    to {
+        border: 1px solid #9eaf3b;
+    }
+}
