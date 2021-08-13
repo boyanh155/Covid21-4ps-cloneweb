@@ -13,6 +13,7 @@
 </head>
 
 <body>
+    <script src="main.js"></script>
     <div id="main">
         <!-- Begin header -->
         <div id="header-container">
@@ -182,7 +183,9 @@
                 <div id="contentWrap-Menu">
 
                     <div class="white-color listMenu">
-                        <h3>Our Menu</h3>
+                        <h3>
+                            <span>Our Menu</span>
+                        </h3>
                         <ul class="flexMenu">
                             <li class="itemMenu"><a href="https://pizza4ps.com//html/PZ_Seasonal_Menu_Digital.html"><span>SEASONAL</span></a></li>
                             <li class="itemMenu"><a href="https://pizza4ps.com/menu/pizza/"><span>PIZZA</span></a></li>
@@ -194,12 +197,48 @@
 
                 <!-- Begin Map-section -->
 
-                <div class="contentWrap__Location"></div>
-                <div class="contentWrap__Map"></div>
+                <div id="contentWrap__Location">
+                    <div class="white-color listMenu">
+                        <h3>
+                            <span>Location</span>
+                        </h3>
+                        <ul class="flexMenu">
+                            <li class="itemMenu"><span>Hai Phong</span></li>
+                            <li class="itemMenu"><span>Ho Chi Minh</span></li>
+                            <li class="itemMenu"><span>Ha Noi</span></li>
+                            <li class="itemMenu"><span>Da Nang</span></li>
+                            <li class="itemMenu"><span>Nha Trang</span></li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="contentWrap__Map">
+                    <div id="googleMap" style="width:100%;height:400px"></div>
+                </div>
+                <!-- gg map lỗi -->
                 <!-- End Map-section  -->
             </div>
 
             <!-- Begin contentWrap2 -->
+            <!-- Coppy ở trên xuống chưa sửa gì hết mai sửa  -->
+            <div id="contentWrap__Location">
+                <div class="white-color listMenu">
+                    <h3>
+                        <span>News & Media</span>
+                    </h3>
+                    <ul class="flexMenu">
+                        <li class="itemMenu"><span>Hai Phong</span></li>
+                        <li class="itemMenu"><span>Ho Chi Minh</span></li>
+                        <li class="itemMenu"><span>Ha Noi</span></li>
+                        <li class="itemMenu"><span>Da Nang</span></li>
+                        <li class="itemMenu"><span>Nha Trang</span></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="contentWrap__Map">
+                <div id="googleMap" style="width:100%;height:400px"></div>
+            </div>
             <!-- End contentWrap2  -->
 
         </div>
@@ -211,6 +250,7 @@
 
         <!-- End Footer  -->
     </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </body>
 
 </html>
