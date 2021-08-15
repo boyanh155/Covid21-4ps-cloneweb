@@ -29,6 +29,10 @@
 
 /* Common CSS */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .col-full {
     width: 100%;
 }
@@ -193,7 +197,7 @@ html {
 .VietNamFlag {
     position: absolute;
     top: 69px;
-    left: 33px;
+    left: 35px;
     display: none;
 }
 
@@ -861,18 +865,44 @@ html {
 
 /* go to Top button */
 
-#footer .pageTop {}
 
-#footer .pageTop a {
+/* #footerWrap .pageTop {
     display: block;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 50px;
+}
+
+#footerWrap .pageTop a {
+    dis
     width: 40px;
     height: 40px;
     border: 2px solid #767575;
     position: relative;
     z-index: 100;
+} */
+
+#footerWrap .pageTop {
+    position: fixed;
+    right: 50px;
+    bottom: 160px;
+    width: 40px;
+    height: 40px;
+    z-index: 1000;
 }
 
-#footer .pageTop a::after {
+#footerWrap .pageTop a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #767575;
+    position: relative;
+    text-indent: -9999em;
+    transition: all 0.2s linear;
+}
+
+#footerWrap .pageTop a::after {
     content: "";
     position: absolute;
     left: 50%;
@@ -887,7 +917,7 @@ html {
     transform: rotate(-90deg);
 }
 
-#footer .pageTop a:hover {
+#footerWrap .pageTop a:hover {
     animation: opacityHalf 0.2s linear forwards;
 }
 
@@ -896,6 +926,10 @@ html {
 
 
 /* keyframe */
+
+.opacityOut {
+    animation: opacityOut 0.2s linear forwards;
+}
 
 @keyframes opacityOut {
     from {
@@ -906,6 +940,10 @@ html {
     }
 }
 
+.opacityFull {
+    animation: opacityFull 0.2s linear forwards;
+}
+
 @keyframes opacityFull {
     from {
         opacity: 0;
@@ -913,6 +951,10 @@ html {
     to {
         opacity: 1;
     }
+}
+
+.opacityHalf {
+    animation: opacityHalf 0.2s linear forwards;
 }
 
 @keyframes opacityHalf {

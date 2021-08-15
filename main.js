@@ -1,7 +1,15 @@
-function myMap() {
-    var mapProp = {
-        center: new google.maps.LatLng(51.508742, -0.120850),
-        zoom: 5,
-    };
-    var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+//Page top Event
+var pageTopE = document.querySelector('#footerWrap .pageTop');
+window.onscroll = () => { scrollHandler() }
+
+function scrollHandler() {
+    if (document.body.ScrollTop > 20 || document.documentElement.scrollTop > 20) {
+        pageTopE.style.display = 'block';
+    } else pageTopE.style.display = 'none';
 }
+
+function toTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+pageTopE.addEventListener('click', toTop);

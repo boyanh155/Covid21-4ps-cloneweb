@@ -13,7 +13,6 @@
 </head>
 
 <body>
-    <script src="main.js"></script>
     <div id="main">
         <!-- Begin header -->
         <div id="header-container">
@@ -214,7 +213,9 @@
                 </div>
                 <!-- Begin Map -->
                 <div class="contentWrap__Map">
-                    <div id="googleMap" style="width:100%;height:400px"></div>
+                    <div id="googleMap" style="width:100%;height:400px;background-color: aliceblue;">
+                        <p style="text-align:center;font-size: 40px;line-height: 60px; color: #000;padding-top: 10%;"> Google Map Not Found !!!!</p>
+                    </div>
                 </div>
                 <!-- gg map lỗi -->
                 <!-- End Map -->
@@ -288,9 +289,6 @@
             <div id="footerWrap">
                 <div id="footer" class="clearfix">
                     <div class="inside">
-                        <p class="pageTop">
-                            <a href="#header-container"></a>
-                        </p>
                         <section class="fBox">
                             <p class="footerImg">
                                 <a href="https://pizza4ps.com/"><img src="//pizza4ps.com/common2017/img/header/logo_white.svg" alt="Pizza4P's" width="140px"></a>
@@ -319,6 +317,9 @@
                     </div>
 
                 </div>
+                <p class="pageTop">
+                    <a href="#header-container"></a>
+                </p>
             </div>
             <!-- End Footer  -->
 
@@ -329,7 +330,9 @@
 
 
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script> -->
+    <script src="main.js">
+    </script>
 </body>
 
 </html>
