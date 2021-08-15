@@ -54,6 +54,10 @@ a {
     font-style: normal;
 }
 
+.fillColorbtn {
+    animation: fillColor 0.2s linear forwards, fillBColor 0.2s linear forwards;
+}
+
 @font-face {
     font-family: font-contentWrap1;
     src: url('https://pizza4ps.com/common2017/fonts/CenturyStd-LightCondensed-VH.woff');
@@ -519,7 +523,8 @@ html {
 /* Begin Dùng chung với Location */
 
 #contentWrap-Menu h3,
-#contentWrap__Location h3 {
+#contentWrap__Location h3,
+#contentWrap2 h3 {
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
@@ -529,7 +534,8 @@ html {
 }
 
 #contentWrap-Menu .listMenu,
-#contentWrap__Location .listMenu {
+#contentWrap__Location .listMenu,
+#contentWrap__News .listMenu {
     text-align: center;
     font-family: 'font-contentWrap1', 'l serif';
     max-width: 1100px;
@@ -538,7 +544,8 @@ html {
 }
 
 #contentWrap-Menu h3 span::before,
-#contentWrap__Location h3 span::before {
+#contentWrap__Location h3 span::before,
+#contentWrap2 #contentWrap__News h3 span::before {
     content: '';
     display: block;
     position: absolute;
@@ -551,7 +558,8 @@ html {
 }
 
 #contentWrap-Menu h3 span::after,
-#contentWrap__Location h3 span::after {
+#contentWrap__Location h3 span::after,
+#contentWrap2 #contentWrap__News h3 span::after {
     content: '';
     display: block;
     position: absolute;
@@ -633,7 +641,258 @@ html {
 /* End Content Wrap 1 __ Location */
 
 
+/*Begin  Map*/
+
+
+/*End Map  */
+
+
+/* Begin ContentWrap 2 */
+
+#contentWrap2 {
+    background: url('//pizza4ps.com/common2017/img/other/bg_body.gif') repeat 0 0;
+    z-index: -1;
+}
+
+#contentWrap2 .vegBG {
+    background: url('https://pizza4ps.com//img2017/top/img_03.webp') no-repeat bottom right, url('https://pizza4ps.com//img2017/top/img_02.webp') no-repeat -10px -50px;
+}
+
+#contentWrap2 #contentWrap__News {
+    padding: 100px 20px 150px 20px;
+}
+
+#contentWrap2 #contentWrap__News .listMenu {}
+
+#contentWrap2 .newsBox {
+    width: 810px;
+    margin: 0 auto;
+}
+
+#contentWrap2 .newsBox .flexnews {
+    margin-top: 75px;
+    font-family: 'font-contentWrap1', 'l serif';
+}
+
+#contentWrap2 .newsBox .flexnews li {
+    list-style: none;
+    margin-top: 75px;
+}
+
+#contentWrap2 .newsBox .inner {
+    width: 80%;
+    display: inline-block;
+}
+
+#contentWrap2 .newsBox .inner .h4-class {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+
+#contentWrap2 .newsBox .inner .h4-class a:hover {
+    animation: fillColor 0.2s linear forwards
+}
+
+#contentWrap2 .newsBox .moreBtn a:hover {
+    animation: fillColor 0.2s linear forwards, fillBColor 0.2s linear forwards;
+}
+
+#contentWrap2 .newsBox .inner .Newsp {
+    display: inline-block;
+    width: 17.3%;
+    margin-right: 7.8%;
+    vertical-align: middle;
+}
+
+#contentWrap2 .newsBox .inner .Newsp:hover {
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+#contentWrap2 .newsBox .inner .Newsp a {
+    display: block;
+    position: relative;
+}
+
+#contentWrap2 .newsBox .inner .Newsp a::before {
+    content: '';
+    display: block;
+    padding-top: 100%;
+    width: 100%;
+}
+
+#contentWrap2 .newsBox .inner .des {
+    display: inline-block;
+    width: 74%;
+    vertical-align: middle;
+    padding-right: 25px;
+}
+
+#contentWrap2 .flexnews .moreBtn {
+    vertical-align: middle;
+    display: inline-block;
+    width: 19%;
+}
+
+#contentWrap2 .flexnews .moreBtn a {
+    display: block;
+    font-size: 16px;
+    line-height: 45px;
+    border: 1px solid var(--white-color);
+    text-align: center;
+}
+
+#contentWrap2 .newsBox .inner .des .date {
+    padding-bottom: 14px;
+    color: #b3b3b3;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+#contentWrap2 .newsBox .inner .des .under-date {
+    font-family: 'font-body', sans-serif;
+    font-size: 12px;
+    line-height: 20px
+}
+
+
+/* End ContentWrap 2 */
+
+
 /* End content */
+
+
+/* Begin Footer */
+
+#footerWrap {
+    background: url('//pizza4ps.com/common2017/img/other/bg_body.gif') repeat 0 0;
+    z-index: -1;
+}
+
+#footer {
+    background-color: rgba(3, 3, 3, 0.3);
+    padding: 30px 20px 45px;
+}
+
+#footer .fBox {
+    float: left;
+}
+
+#footer .inside {
+    max-width: 1030px;
+    margin: 0 auto;
+}
+
+#footer .inside p {
+    display: inline-block;
+}
+
+#footer .inside .footerImg {
+    margin-right: 45px;
+    display: inline-block;
+}
+
+#footer .inside .footerImg a {
+    padding-left: 14px;
+}
+
+#footer .footerInfo {
+    padding-top: 13px;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+#footer .footerInfo span:nth-child(2) {
+    position: relative;
+    padding-left: 14px;
+    margin-left: 14px;
+}
+
+.footerInfo a {
+    padding-left: 14px;
+}
+
+.footerInfo a:hover {
+    animation: opacityHalf 0.2s linear forwards;
+}
+
+#footer .footerInfo a:first-child {
+    padding-left: 0;
+}
+
+#footer .footerInfo span:nth-child(2)::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    margin-top: -7px;
+    left: 0;
+    width: 1px;
+    height: 14px;
+    background: #fff;
+}
+
+#footer .mailInfo {
+    float: left;
+}
+
+#footer .mailInfo li {
+    list-style: none;
+    padding-left: 65px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+#footer .mailInfo li a {
+    display: block;
+}
+
+#footer .right-text-footer {
+    float: right;
+    font-size: 12px;
+    line-height: 12px;
+    font-family: 'font-contentWrap1', 'l serif';
+    padding-top: 15px;
+}
+
+
+/* go to Top button */
+
+#footer .pageTop {}
+
+#footer .pageTop a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #767575;
+    position: relative;
+    z-index: 100;
+}
+
+#footer .pageTop a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -6px;
+    margin-left: -4px;
+    width: 0;
+    height: 0;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid #767575;
+    border-top: 6px solid transparent;
+    transform: rotate(-90deg);
+}
+
+#footer .pageTop a:hover {
+    animation: opacityHalf 0.2s linear forwards;
+}
+
+
+/* End Footer */
 
 
 /* keyframe */
