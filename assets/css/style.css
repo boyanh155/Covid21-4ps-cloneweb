@@ -104,6 +104,7 @@ html {
 /* test git hub */
 
 #header {
+    width: 100%;
     height: 88px;
     z-index: 1;
     font-size: 14px;
@@ -852,6 +853,10 @@ html {
 
 #footer .mailInfo li a {
     display: block;
+}
+
+#footer .mailInfo li a:hover {
+    animation: opacityHalf 0.2s linear forwards;
 }
 
 #footer .right-text-footer {

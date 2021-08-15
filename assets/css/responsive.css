@@ -1,0 +1,37 @@
+/* 
+PC :>=1024px
+TABLET :>= 740px && < 1024 px 
+MOBILE :< 740px
+*/
+
+
+/* BREAK POINT */
+
+
+/* PC */
+
+
+/* @media(min-width:1024px) {} */
+
+
+/* TABLET */
+
+@media(min-width:740px)and (max-width:1023px) {
+    .header__left-nav {
+        margin-right: 15px;
+        margin-top: 39px;
+    }
+}
+
+
+/* MOBILE */
+
+@media(max-width:739px) {
+    #header {
+        height: 57px;
+    }
+    #header #header__logo {
+        padding: 1px 0 0 12px;
+    }
+    #header #header__nav {}
+}

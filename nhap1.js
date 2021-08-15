@@ -24,9 +24,11 @@ pageTopE.addEventListener('click', pageTopEListener)
 // var currentOpacity = window.getComputedStyle(pageTopE).getPropertyValue("opacity");//get css value
 // var currentOpacity = pageTopE.style.opacity  // get attribute style value
 window.onscroll = function() {
-    let check = pageTopClass.contains("opacityOut")
-    if (check) {
-        pageTopClass.remove('opacityOut');
-    }
+        let check = pageTopClass.contains("opacityOut")
+        if (check) {
+            pageTopClass.remove('opacityOut');
+        }
 
-}
+    }
+    // Git Commit
+    //git config --get remote.origin.url
